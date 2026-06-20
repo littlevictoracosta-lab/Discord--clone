@@ -1,16 +1,1 @@
-// Update another player's position based on the data received
-function updateNetworkPlayer(jsonData) {
-    const playerData = JSON.parse(jsonData);
-    
-    // Find the 3D model of the player by their ID
-    let playerModel = gameScene.getObjectByName(playerData.playerId);
-    
-    if (playerModel) {
-        // Move their 3D avatar to the new coordinates
-        playerModel.position.set(
-            playerData.position.x, 
-            playerData.position.y, 
-            playerData.position.z
-        );
-    }
-}
+
